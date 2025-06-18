@@ -64,10 +64,14 @@ export default {
 				}
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				lg: 'var(--radius)', /* 0.25rem (4px) */
+				md: 'calc(var(--radius) - 2px)', /* 2px */
+				sm: 'calc(var(--radius) - 4px)'  /* 0px */
 			},
+			fontFamily: {
+        sans: ['var(--font-sans)', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+        serif: ['var(--font-serif)', 'ui-serif', 'Georgia', 'Cambria', "Times New Roman", 'Times', 'serif'],
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
